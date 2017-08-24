@@ -1,13 +1,12 @@
 {
   "name": "react-docgen-displayname-handler",
-  "version": "1.0.0",
+  "version": "1.0.1-bv",
   "description": "A handler for react-docgen that tries to infer the displayName of a component",
   "license": "MIT",
   "main": "distribution/index.js",
   "scripts": {
     "flow": "flow",
     "lint": "eslint src/",
-    "prebuild": "npm test",
     "build": "rimraf distribution/ && babel source/ --out-dir distribution/ --ignore **/*.spec.js",
     "prepublish": "npm run build",
     "pretest": "npm run lint && npm run flow",
